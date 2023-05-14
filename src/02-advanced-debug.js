@@ -3,11 +3,10 @@ debugger
 
 // first, define the function.
 function goodPractices() {
-  let game = gameObject();
+  let game = gameObject.home.players;
   for (let gameKey in game) {
     // are you ABSOLUTELY SURE what 'gameKey' is?
     // use the debugger to find out!
-    debugger
     let teamObj = game[gameKey]
     for (let teamKey in teamObj) {
       // are you ABSOLUTELY SURE what 'teamKey' is?
@@ -25,4 +24,4 @@ function goodPractices() {
 }
 
 // then, call the function so it runs!
-goodPractices()
+goodPractices();
